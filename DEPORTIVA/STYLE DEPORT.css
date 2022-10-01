@@ -1,0 +1,462 @@
+@font-face {
+    font-family: Raleway;
+    src: url('./fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('./fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Italic;
+    src: url('./fonts/Raleway-Italic.ttf');
+}
+
+@font-face {
+    font-family: LibreFranklin-Regular;
+    src: url('./fonts/LibreFranklin-Regular.ttf');
+}
+
+@font-face {
+    font-family: LibreFranklin-Thin;
+    src: url('./fonts/LibreFranklin-Thin.ttf');
+}
+
+@font-face {
+    font-family: LibreFranklin-Bold;
+    src: url('./fonts/LibreFranklin-Bold.ttf');
+}
+body{
+    
+   
+    
+    }
+  
+
+
+
+.container {
+    width: 1124px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+/* header */
+header{ width: 100%
+}
+
+
+header .top-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background: white;
+    position: fixed;
+     z-index: 1;
+    margin-left: 100px;
+   
+}
+
+header .top-buttons  a {
+    
+    margin: 0 50px;
+    margin-top: 30px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+   
+    
+font-family: Raleway-Bold, sans-serif;
+    
+   
+   
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 300px;
+}
+
+
+/* news feed */
+
+
+
+#news-feed .row .left-col a{
+    width: 65%;
+    text-decoration: none;
+   font-weight: bold;
+   font-family: sans-serif;
+   color: black;
+    
+}
+
+#news-feed .row .right-col {
+    width: 35%;
+}
+
+#news-feed article {
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+    height: 100%;
+   
+}
+
+#news-feed .row .left-col article {
+    height: 100%;
+}
+
+#news-feed .row .right-col article {
+    height: 50%;
+}
+
+#news-feed h1 {
+    margin: 25px 0 20px 0;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 36px; 
+    
+    
+}
+
+#news-feed h2 {
+    color: black;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+#news-feed p {
+    flex-grow: 1;
+    font-size: 20px;
+    font-family: LibreFranklin-Thin, sans-serif;
+    color: grey;
+}
+
+#news-feed figure {
+    margin: 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#news-feed figure img {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#news-feed figure figcaption {
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: LibreFranklin-Bold, sans-serif;
+    background: rgb(0, 0, 0, 0.6);
+
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+#news-feed figure:hover figcaption {
+    background: black;
+}
+
+#news-feed figure figcaption span {
+    color: white;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 1124px;
+    width: 100%;
+    background: rgb(245, 245, 245);
+    height: 300px;
+}
+
+footer .topbar {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+}
+
+footer .topbar img {
+    width: 150px;
+}
+
+
+
+footer .topbar .rrss a {
+    text-decoration: none;
+}
+
+footer .topbar .rrss i {
+    color: rgb(60, 60, 60);
+    margin-right: 12px;
+    font-size: 22px;
+}
+
+footer .sitemap {
+    display: flex;
+    width: 100%;
+}
+
+footer .sitemap .col {
+    width: 25%;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+footer .sitemap ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .sitemap ul li {
+    font-family: LibreFranklin-Regular, sans-serif;
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+footer .sitemap ul li span {
+    color: rgb(60, 60, 60);
+    font-family: LibreFranklin-Bold, sans-serif;
+}
+
+footer .sitemap ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    font-family: LibreFranklin-Regular, sans-serif;
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+}
+
+/* post */
+
+#post {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#post article {
+    display: flex;
+    flex-direction: column;
+}
+
+#post .label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#post .label span {
+    font-size: 24px;
+    font-family: LibreFranklin-Bold, sans-serif;
+    color: rgb(255, 135, 0);
+    margin-right: 15px;
+}
+
+#post .label .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 135, 0);
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#post .label .circle i {
+    color: white;
+}
+
+#post .label small {
+    color: rgb(50, 50, 50);
+    font-family: LibreFranklin-Regular, sans-serif;
+    font-size: 12px;
+}
+
+#post h1 {
+    color: black;
+    font-family: LibreFranklin-Bold, sans-serif;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+#post h2 {
+    color: rgb(80, 80, 80);
+    font-family: LibreFranklin-Thin, sans-serif;
+    font-size: 23px;
+}
+
+#post .author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#post .author img {
+    width: 64px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+}
+
+#post .author .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#post .author .info .name {
+    font-size: 15px;
+    font-family: LibreFranklin-Regular, sans-serif;
+    margin-bottom: 5px;
+}
+
+#post .author .info .name span {
+    font-family: LibreFranklin-Bold, sans-serif;
+}
+
+#post .author .info .date {
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+    font-family: LibreFranklin-Regular, sans-serif;
+    margin-bottom: 5px;
+}
+
+#post .author .info .email {
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    font-family: LibreFranklin-Regular, sans-serif;
+}
+
+#post .rrss {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#post .rrss .color-fbk { color: rgb(42, 110, 227); }
+#post .rrss .color-twitter { color: rgb(42, 171, 227); }
+#post .rrss .color-instagram { color: rgb(185, 84, 123); }
+#post .rrss .color-whatsapp { color: rgb(1, 177, 24); }
+#post .rrss .color-youtube { color: rgb(247, 15, 15); }
+
+#post .rrss i {
+    margin: 0 20px;
+}
+
+#post figure {
+    margin: 0;
+}
+
+#post figure figcaption {
+    color: grey;
+    font-size: 14px;
+    font-family: LibreFranklin-Regular, sans-serif;
+    margin: 10px 0;
+    max-width: 750px;
+}
+
+#post img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#post p {
+    max-width: 750px;
+    font-size: 18px;
+    font-family: LibreFranklin-Regular, sans-serif;
+    color: rgb(80, 80, 80);
+    line-height: 30px;
+}
+
+#post p span {
+    font-family: LibreFranklin-Bold, sans-serif;
+    color: black;
+}
+
+#post p .highlight {
+    background: yellow;
+}
+
+/*CONTADOR MUNDIAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+
+.cont-temporizador{
+    display: flex;
+    justify-content: center;   
+    margin-top: 50px; 
+}
+  
+.cont-temporizador .bloque{
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.cont-temporizador .bloque div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0px 0px 6px 2px #727272 inset;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100px;
+    height: 70px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+.cont-temporizador .bloque p{
+    font-size: 11px;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+
+
+
+
+
