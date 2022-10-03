@@ -122,6 +122,7 @@ header .logo {
 
 #news-feed .row .right-col article {
     height: 50%;
+   
 }
 
 #news-feed h1 {
@@ -130,20 +131,25 @@ header .logo {
     font-size: 36px; 
     
     
+    
 }
+a{text-decoration: none;
+color: black;}
 
-#news-feed h2 {
+#news-feed  h2  {
     color: black;
     font-family: LibreFranklin-Bold, sans-serif;
     font-size: 24px;
     flex-grow: 1;
+   
 }
 
-#news-feed p {
+#news-feed p  {
     flex-grow: 1;
     font-size: 20px;
     font-family: LibreFranklin-Thin, sans-serif;
     color: grey;
+   
 }
 
 #news-feed figure {
